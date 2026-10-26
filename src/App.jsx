@@ -1,15 +1,16 @@
-// import './app.css'
+import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom'
 
+import history from './services/history.jsx'
 import Header from './components/header/index.jsx'
-import Login from './pages/login/index.jsx'
 import GlobalStyle from './styles/GlobalStyle.jsx'
+import Routes from './routes/index.jsx'
 
 export default function App() {
   return (
-    <>
-      <GlobalStyle />
+    <HistoryRouter history={history}>
       <Header />
-      <Login />
-    </>
+      <Routes />
+      <GlobalStyle />
+    </HistoryRouter>
   )
 }
