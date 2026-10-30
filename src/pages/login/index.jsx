@@ -1,5 +1,6 @@
 import { Title } from './styled.jsx'
 import { Container } from '../../styles/GlobalStyle.jsx'
+import * as exActions from '../../store/modules/example/actions.jsx'
 
 import { useDispatch } from 'react-redux'
 
@@ -7,9 +8,7 @@ export default function Login() {
   const dispatch = useDispatch()
   function handleClick(e) {
     e.preventDefault()
-    dispatch({
-      type: 'CLICKED_BUTTON',
-    })
+    dispatch(exActions.clikedButton())
   }
 
   return (
