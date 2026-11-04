@@ -8,7 +8,7 @@ export default function Login() {
   const dispatch = useDispatch()
   function handleClick(e) {
     e.preventDefault()
-    dispatch(exActions.clikedButton())
+    dispatch(exActions.clickedButtonRequest())
   }
 
   return (

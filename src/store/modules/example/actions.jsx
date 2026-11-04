@@ -1,7 +1,19 @@
 import * as types from '../types.jsx'
 
-export function clikedButton() {
+export function clickedButtonRequest() {
   return {
-    type: types.CLICKED_BUTTON,
+    type: types.CLICKED_BUTTON_REQUEST,
+  }
+}
+
+export function clickedButtonSuccess() {
+  return {
+    type: types.CLICKED_BUTTON_SUCCESS,
+  }
+}
+
+export function clickedButtonFailure() {
+  return {
+    type: types.CLICKED_BUTTON_FAILURE,
   }
 }
