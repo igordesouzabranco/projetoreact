@@ -6,7 +6,7 @@ const req = () =>
   new Promise((resolve) => {
     setTimeout(() => {
       resolve()
-    }, 3000)
+    }, 600)
   })
 
 function* exampleRequest() {
